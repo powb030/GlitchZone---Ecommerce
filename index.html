@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loadout Labs</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<!-- CSS styling -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<!-- Google font Orbitron -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- Navbar -->
+
+	<nav class="navbar navbar-expand-lg bg-dark px-md-5">
+	  <div class="container-fluid">
+	  	<a class="navbar-brand" href="#home">
+	  	  <h1 class="mb-0 text-white me-3">GlitchZone</h1>
+	  	</a>
+
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav ms-auto">
+	        <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="#home">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#peripherals">Shop</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#featured">Featured</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#contact">Contacts</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+	<!-- Landing  -->
+	<section id="home" class="d-flex justify-content-center align-items-center text-center">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col">
+	        <h1 class="name-text">Level Up Your Setup!</h1>
+	        <p class="lead">Step into the game with gear that reacts as fast as you do.</p>
+	        <a href="#products" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
+	<!-- Featured -->
+
+	<!-- Peripherals Slider Section -->
+	<section id="peripherals">
+	  <div class="peripherals-wrapper">
+
+	    <!-- LEFT: Slider -->
+	    <div class="slider-container">
+	      <div class="slider-box">
+
+	        <!-- Arrow Left -->
+	        <button class="arrow arrow-left" onclick="slidePeripherals(-1)">&#8249;</button>
+
+	        <!-- Track -->
+	        <div id="peripheralTrack" class="slider-track">
+
+	          <!-- Slide 1 -->
+	          <div class="slide">
+	            <div class="text-center">
+	              <img src="./images/Wooting.png" alt="Product 1">
+	              <h4 class="mt-2 slide-title">Wooting 60HE v2</h4>
+	            </div>
+	          </div>
+
+	          <!-- Slide 2 -->
+	          <div class="slide">
+	            <div class="text-center">
+	              <img src="./images/Artic.png" alt="Product 1">
+	              <h4 class="mt-2 slide-title">SteelSeries Arctis Nova Pro Wireless</h4>
+	            </div>
+	          </div>
+
+	          <!-- Slide 3 -->
+	          <div class="slide">
+	            <div class="text-center">
+	              <img src="./images/LogitechMouse.png" alt="Product 1">
+	              <h4 class="mt-2 slide-title">Logitech G Pro X2 Superlight</h4>
+	            </div>
+	          </div>
+
+	          <!-- Slide 4 -->
+	          <div class="slide">
+	            <div class="text-center">
+	              <img src="./images/Monitor.png" alt="Product 1">
+	              <h4 class="mt-2 slide-title">Gigabyte Aorus FO32U2 Pro</h4>
+	            </div>
+	          </div>
+	        </div>
+
+
+	        <!-- Arrow Right -->
+	        <button class="arrow arrow-right" onclick="slidePeripherals(1)">&#8250;</button>
+
+	      </div>
+	    </div>
+
+	    <!-- RIGHT: Why Choose Us -->
+	    <div class="why-choose">
+	      <h2>Why Choose Us?</h2>
+	      <p>
+	        Our shop offers the widest selection of peripherals, exclusive items, and the latest
+	        releases. Experience fast shipping, great prices, and exceptional customer service.
+	      </p>
+	    </div>
+
+	  </div>
+	</section>
+
+	<!-- Featured Products -->
+
+	<section id="featured" class="py-5">
+	  <div class="container">
+	    <div class="row mb-4 text-center mb-md-5">
+	      <div class="col-12">
+	        <h2 class="featured-title">Featured Products</h2>
+	      </div>
+	    </div>
+	    <div class="row g-4">
+
+	      <!-- Card 1 -->
+	      <div class="col-12 col-sm-6 col-md-4 mb-4">
+	        <div class="card project-card shadow h-100">
+	          <img src="./images/Razer BlackWidow V4.png" class="card-img-top" alt="Razer BlackWidow V4">
+	          <div class="card-body">
+	            <h5 class="card-title">Razer BlackWidow V4</h5>
+	            <p class="card-text">RGB, tactile switches, customizable macros</p>
+	          </div>
+	        </div>
+	      </div>
+
+	      <!-- Card 2 -->
+	      <div class="col-12 col-sm-6 col-md-4 mb-4">
+	        <div class="card project-card shadow h-100">
+	          <img src="./images/Logitech G502 Hero.png" class="card-img-top" alt="Logitech G502 Hero">
+	          <div class="card-body">
+	            <h5 class="card-title">Logitech G502 Hero</h5>
+	            <p class="card-text">High-DPI sensor, programmable buttons, ergonomic design</p>
+	          </div>
+	        </div>
+	      </div>
+
+	      <!-- Card 3 -->
+	      <div class="col-12 col-sm-6 col-md-4 mb-4">
+	        <div class="card project-card shadow h-100">
+	          <img src="./images/ASUS ROG Swift PG259QN Monitor.webp" class="card-img-top" alt="Logitech G502 Hero">
+	          <div class="card-body">
+	            <h5 class="card-title">ASUS ROG Swift PG259QN Monitor</h5>
+	            <p class="card-text">360Hz refresh rate, 1ms response, G-Sync support</p>
+	          </div>
+	        </div>
+	      </div>
+
+	    </div>
+	  </div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="contact" class="py-5" style="background: #0d0d1a; border-top: 1px solid rgba(0,247,255,0.15);">
+	  <div class="container">
+	    <div class="row g-4">
+
+	      <!-- Brand -->
+	      <div class="col-12 col-md-4">
+	        <h3 class="footer-brand">GlitchZone</h3>
+	        <p class="footer-text">Level up your setup with the best gaming peripherals. Built for gamers, by gamers.</p>
+	      </div>
+
+	      <!-- Quick Links -->
+	      <div class="col-12 col-md-4">
+	        <h5 class="footer-heading">Quick Links</h5>
+	        <ul class="list-unstyled">
+	          <li class="mb-2"><a href="#landing" class="footer-link">Home</a></li>
+	          <li class="mb-2"><a href="#peripherals" class="footer-link">Shop</a></li>
+	          <li class="mb-2"><a href="#featured" class="footer-link">Peripherals</a></li>
+	          <li class="mb-2"><a href="#contact" class="footer-link">Contact</a></li>
+	        </ul>
+	      </div>
+
+	      <!-- Contact -->
+	      <div class="col-12 col-md-4">
+	        <h5 class="footer-heading">Contact Us</h5>
+	        <p class="footer-text">📧 support@loadoutlabs.com</p>
+	        <p class="footer-text">📍 Manila, Philippines</p>
+	        <p class="footer-text">📞 +63 912 345 6789</p>
+	      </div>
+
+	    </div>
+
+	    <!-- Bottom bar -->
+	    <div class="row mt-4 pt-3 border-top border-secondary">
+	      <div class="col-12 text-center">
+	        <p class="footer-text mb-0">© 2026 GlitcZone. All rights reserved.</p>
+	      </div>
+	    </div>
+
+	  </div>
+	</footer>
+
+	<script>
+	  function slidePeripherals(dir) {
+	    const track = document.getElementById('peripheralTrack');
+	    const slideWidth = track.firstElementChild.offsetWidth + 20;
+	    track.scrollBy({ left: dir * slideWidth, behavior: 'smooth' });
+	  }
+	</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
